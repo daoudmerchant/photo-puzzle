@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solution - Daoud Merchant</title>
+  </head>
+  <body>
+    <h1>Aftonbladet</h1>
+    <form id="settings">
+      <div>
+        <label for="picture">Picture:</label>
+        <select id="picture">
+          <option value="woods">Woods</option>
+          <option value="beach">Beach</option>
+          <option value="city">City</option>
+        </select>
+      </div>
+      <div>
+        <!--Grid sizes updated in JS, below serves as fallback-->
+        <label for="gridsize" id="gridsizelabel"
+          >Grid size (between 2 and 6):</label
+        >
+        <input id="gridsize" type="number" min="2" max="6" value="3" />
+      </div>
+    </form>
+    <div id="controls" class="panel">
+      <button type="button" id="newgame">New Game</button>
+      <button type="button" id="hint" disabled>Hint</button>
+    </div>
+    <div id="counters" class="panel">
+      <div class="counter" id="scorecounter">
+        <p>Score:</p>
+        <p id="score">-</p>
+      </div>
+      <div class="counter" id="errorcounter">
+        <p>Errors:</p>
+        <p id="errors">-</p>
+      </div>
+      <div class="counter" id="hintcounter">
+        <p>Hints:</p>
+        <p id="hints">-</p>
+      </div>
+    </div>
+    <div id="gamearea">
+      <!--Fill with JS-->
+    </div>
+    <p id="outcome"><!--Fill with JS--></p>
+    <div id="tilerack">
+      <!--Fill with JS-->
+    </div>
+  </body>
+</html>
